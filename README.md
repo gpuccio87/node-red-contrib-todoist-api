@@ -1,4 +1,4 @@
-# @foxleigh81/node-red-contrib-todoist-api
+# @gpuccio87/node-red-contrib-todoist-api
 
 ![npm](https://img.shields.io/npm/dm/@foxleigh81/node-red-contrib-todoist-api)
 
