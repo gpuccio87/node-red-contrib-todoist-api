@@ -1,5 +1,7 @@
 # @gpuccio87/node-red-contrib-todoist-api
 
+This is a fork of the good work of foxleigh81. https://github.com/foxleigh81/node-red-contrib-todoist-api
+
 ![npm](https://img.shields.io/npm/dm/@foxleigh81/node-red-contrib-todoist-api)
 
 ![Todoist Node Red](https://repository-images.githubusercontent.com/458516480/01940d4d-b7eb-4683-9afb-ff57ee1a86c1)
