@@ -1,7 +1,7 @@
 # @gpuccio87/node-red-contrib-todoist-api
 
-This is a fork of the good work of foxleigh81. https://github.com/foxleigh81/node-red-contrib-todoist-api
-It's just a temporary fix to make the plugin work with Todoist API v2. All credits go to him
+This is a fork of the good work of foxleigh81. https://github.com/foxleigh81/node-red-contrib-todoist-api. All credits go to him
+It's just a temporary fix to make the plugin work with Todoist API v2. The node is functional and superimposable on the original plugin: there is therefore no need to uninstall the foxleigh81 one, waiting for it to be updated
 
 ![npm](https://img.shields.io/npm/dm/@foxleigh81/node-red-contrib-todoist-api)
 
