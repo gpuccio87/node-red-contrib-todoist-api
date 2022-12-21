@@ -1,6 +1,6 @@
 module.exports = function (RED) {
   var todoistQuery = require("../lib/todoist-query");
-  function TodoistTaskReopen(config) {
+  function TodoistTaskCreate(config) {
     RED.nodes.createNode(this, config);
 
     var node = this;
@@ -11,7 +11,7 @@ module.exports = function (RED) {
       var data = msg.payload;
       var options = {
         token,
-        endpoint: `tasks/${data.id}/reopen`,
+        endpoint: "tasks",
         method: "POST",
         data
       };
@@ -30,5 +30,5 @@ module.exports = function (RED) {
         });
     });
   }
-  RED.nodes.registerType("todoist-task-reopen", TodoistTaskReopen);
+  RED.nodes.registerType("todoist-task-create-v2", TodoistTaskCreate);
 };

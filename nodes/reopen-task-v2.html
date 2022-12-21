@@ -1,24 +1,24 @@
 <script type="text/javascript">
-  RED.nodes.registerType("todoist-task-get-all", {
-    category: "Todoist",
+  RED.nodes.registerType("todoist-task-reopen-v2", {
+    category: "Todoist v2",
     icon: "icons/todoist.png",
     color: "#db4c3f",
     defaults: {
       name: { value: "" },
       token: {
-        type: "add-todoist-api-token"
+        type: "add-todoist-api-token-v2"
       }
     },
     inputs: 1,
     outputs: 1,
     label: function () {
-      return this.name || "Get all tasks";
+      return this.name || "Reopen a task v2";
     },
-    paletteLabel: "Get all tasks"
+    paletteLabel: "Reopen a task v2"
   });
 </script>
 
-<script type="text/html" data-template-name="todoist-task-get-all">
+<script type="text/html" data-template-name="todoist-task-reopen-v2">
   <div class="form-row">
     <label for="node-input-token"><i class="fa fa-key"></i> Select Token</label>
     <input type="text" id="node-input-token" />
@@ -29,14 +29,14 @@
   </div>
 </script>
 
-<script type="text/markdown" data-help-name="todoist-task-get-all">
-  This node gets all tasks in your Todoist account, no payload is required to get all tasks on account, but if you want to get all tasks of a specific project, you must pass `projectId` as a payload.
+<script type="text/markdown" data-help-name="todoist-task-reopen-v2">
+  This node allows you to Re-open (mark incomplete) a task in your Todoist account. It expects a payload with a task ID.
 
   e.g.
 
-  ```json
+  ```
   {
-    "projectId": "123456789"
+    "id": "123456789"
   }
   ```
 </script>

@@ -1,6 +1,6 @@
 module.exports = function (RED) {
   var todoistQuery = require("../lib/todoist-query");
-  function TodoistTaskCreate(config) {
+  function TodoistTaskUpdate(config) {
     RED.nodes.createNode(this, config);
 
     var node = this;
@@ -11,7 +11,7 @@ module.exports = function (RED) {
       var data = msg.payload;
       var options = {
         token,
-        endpoint: "tasks",
+        endpoint: `tasks/${data.id}`,
         method: "POST",
         data
       };
@@ -30,5 +30,5 @@ module.exports = function (RED) {
         });
     });
   }
-  RED.nodes.registerType("todoist-task-create", TodoistTaskCreate);
+  RED.nodes.registerType("todoist-task-update-v2", TodoistTaskUpdate);
 };

@@ -1,26 +1,26 @@
 {
-  "name": "@foxleigh81/node-red-contrib-todoist-api",
-  "version": "0.0.4",
-  "description": "Todoist API interaction nodes for Node-RED",
+  "name": "@gpuccio87/node-red-contrib-todoist-api",
+  "version": "0.0.1",
+  "description": "Todoist API v2 interaction nodes for Node-RED",
   "node-red": {
     "nodes": {
-      "add-todoist-api-token": "./nodes/config.js",
-      "todoist-task-get": "./nodes/get-task.js",
-      "todoist-task-get-all": "./nodes/get-all-tasks.js",
-      "todoist-task-create": "./nodes/create-task.js",
-      "todoist-task-update": "./nodes/update-task.js",
-      "todoist-task-complete": "./nodes/complete-task.js",
-      "todoist-task-reopen": "./nodes/reopen-task.js",
-      "todoist-task-delete": "./nodes/delete-task.js",
-      "todoist-query-api": "./nodes/query.js"
+      "add-todoist-api-token-v2": "./nodes/config-v2.js",
+      "todoist-task-get-v2": "./nodes/get-task-v2.js",
+      "todoist-task-get-all-v2": "./nodes/get-all-tasks-v2.js",
+      "todoist-task-create-v2": "./nodes/create-task-v2.js",
+      "todoist-task-update-v2": "./nodes/update-task-v2.js",
+      "todoist-task-complete-v2": "./nodes/complete-task-v2.js",
+      "todoist-task-reopen-v2": "./nodes/reopen-task-v2.js",
+      "todoist-task-delete-v2": "./nodes/delete-task-v2.js",
+      "todoist-query-api-v2": "./nodes/query-v2.js"
     }
   },
   "license": "MIT",
   "homepage": "https://github.com/foxleigh81/node-red-contrib-todoist-api#readme",
   "authors": {
-    "name": "Alex Foxleigh",
-    "email": "alex@alexfoxleigh.com",
-    "url": "https://alexfoxleigh.com/"
+    "name": "Gabriele Pucciarelli",
+    "email": "info@gabrielepucciarelli.com",
+    "url": "htpps://www.gabrielepucciarelli.com"
   },
   "keywords": [
     "Todoist",
@@ -28,7 +28,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/foxleigh81/node-red-contrib-todoist-api.git"
+    "url": "https://github.com/gpuccio87/node-red-contrib-todoist-api.git"
   },
   "dependencies": {
     "axios": "^0.25.0",
